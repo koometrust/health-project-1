@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  flex: 0 0 20%;
+  background-color: #C6D9F1; /* Light blue color */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.sidebar:last-of-type {
+  background-color: #F1C6C6; /* Light red color */
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+/* Style the left-hand sidebar */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  min-height: 100vh; /* Extend the height to the bottom of the page */
+  margin-left: 20px;
+  background-color: #C6D9F1; /* Light blue color */
+  border-radius: 10px;
+  padding: 20px;
+}
+#food-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
