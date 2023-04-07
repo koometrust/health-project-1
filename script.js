@@ -2,13 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('form');
   const heightInput = document.getElementById('height');
   const weightInput = document.getElementById('weight');
+  const bmiResult = document.getElementById('bmi-result');
 
   form.addEventListener('submit', (e) => {
     e.preventDefault(); // prevent form submission
     const height = heightInput.value;
     const weight = weightInput.value;
     const bmi = calculateBMI(height, weight);
-    alert(`Your BMI is ${bmi.toFixed(2)}.`);
+    bmiResult.innerText = `Your BMI is ${bmi.toFixed(2)}.`;
 
     // Determine appropriate nutrient content based on BMI category
     let nutrient;
@@ -36,18 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
           foodItem.innerText = food.description;
           foodList.appendChild(foodItem);
         });
-
-        // Remove any existing food list and display new one
-        const existingFoodList = document.getElementById('food-list');
-        if (existingFoodList) {
-          existingFoodList.remove();
-        }
-        const contentDiv = document.querySelector('.content');
-        const heading = document.createElement('h2');
-        heading.innerText = 'Recommended Foods';
-        foodList.setAttribute('id', 'food-list');
-        contentDiv.appendChild(heading);
-        contentDiv.appendChild(foodList);
+        const mealPlanDiv = document.getElementById('meal-plan');
+        mealPlanDiv.innerHTML = '';
+        mealPlanDiv.appendChild(foodList);
       })
       .catch(error => {
         // Handle any errors that occur
