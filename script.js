@@ -36,7 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
           foodItem.innerText = food.description;
           foodList.appendChild(foodItem);
         });
-        document.body.appendChild(foodList);
+
+        // Remove any existing food list and display new one
+        const existingFoodList = document.getElementById('food-list');
+        if (existingFoodList) {
+          existingFoodList.remove();
+        }
+        const contentDiv = document.querySelector('.content');
+        const heading = document.createElement('h2');
+        heading.innerText = 'Recommended Foods';
+        foodList.setAttribute('id', 'food-list');
+        contentDiv.appendChild(heading);
+        contentDiv.appendChild(foodList);
       })
       .catch(error => {
         // Handle any errors that occur
