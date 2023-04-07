@@ -1,22 +1,59 @@
-# health-project-1
-KoomeTrust BMI Calculator
-This is a simple BMI calculator project for KoomeTrust. It allows users to input their height and weight to calculate their BMI, and displays their health status based on the calculated result. The project also provides a list of healthy food options using the Edamam API.
+# KoomeTrust BMI Calculator
 
-Getting Started
-To use this project, you can simply open the index.html file in your web browser. Make sure you have an internet connection to allow the project to access the Edamam API.
+Welcome to the KoomeTrust BMI Calculator! This is a simple tool that allows you to calculate your BMI (Body Mass Index) based on your height and weight.
 
-Usage
-Enter your height (in centimeters) and weight (in kilograms) in the input fields provided.
-Click on the "Calculate BMI" button to calculate your BMI.
-Your BMI and health status will be displayed below the input fields.
-Scroll down to view the list of healthy food options provided by the Edamam API.
-Disclaimer
-Please note that the information provided by this project may be inaccurate and is for project purposes only. We are still working on improving the accuracy of the code.
+## Usage
 
-Credits
-This project was created using HTML, CSS, and JavaScript. The healthy food options are provided by the Edamam API.
+To use the BMI Calculator, simply enter your height (in centimeters) and weight (in kilograms) in the provided input fields. Then click the "Calculate BMI" button to see your results.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+The BMI Calculator will display your BMI value and your corresponding health status. If your BMI falls within a healthy range, you will be classified as "healthy". If your BMI is higher than the healthy range, you will be classified as "obese".
 
-I hope this helps! Let me know if you have any other questions or if there is anything else I can assist you with.
+## Disclaimer
+
+Please note that the information provided by the BMI Calculator may be false and is for project purposes only. We are still working on the code and will update it accordingly.
+
+## Healthy Food Options
+
+The BMI Calculator also provides you with healthy food options based on your BMI results. These options are retrieved through an API that requires an API key to function. Please refer to the code comments on how to obtain an API key and insert it into the code.
+
+## Sample Healthy Food Options
+
+Here are some sample healthy food options that you might receive based on your BMI results:
+
+- A Low-Starch and High-Fiber Diet Intervention Impacts the Microbial Community of Raw Bovine Milk
+- Abalone
+- Acerola juice, raw
+- Acerola, (west indian cherry), raw
+- Acorn stew (Apache)
+- Adobo, with noodles
+- Adobo, with rice
+- Agave liquid sweetener
+- Agave, cooked (Southwest)
+- Agave, dried (Southwest)
+- Agave, raw (Southwest)
+- Agutuk, fish with shortening (Alaskan ice cream) (Alaska Native)
+- Agutuk, fish/berry with seal oil (Alaskan ice cream) (Alaska Native)
+- Agutuk, meat-caribou (Alaskan ice cream) (Alaska Native)
+- Alcoholic beverage, beer, light
+- Alcoholic beverage, beer, light, BUD LIGHT
+- Alcoholic beverage, beer, light, BUDWEISER SELECT
+- Alcoholic beverage, beer, light, higher alcohol
+- Alcoholic beverage, beer, light, low carb
+- Alcoholic beverage, beer, regular, all
+- Alcoholic beverage, beer, regular, BUDWEISER
+- Alcoholic beverage, creme de menthe, 72 proof
+- Alcoholic beverage, daiquiri, canned
+- Alcoholic beverage, daiquiri, prepared-from-recipe
+- Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 100 proof
+- Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 80 proof
+- Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 86 proof
+- Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 90 proof
+- Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 94 proof
+- Alcoholic beverage, distilled, rum, 80 proof
+- Alcoholic beverage, distilled, vodka, 80 proof
+- Alcoholic beverage, distilled, whiskey, 86 proof
+- Alcoholic beverage, liqueur, coffee with cream, 34 proof
+- Alcoholic beverage, liqueur, coffee, 53 proof
+- Alcoholic beverage, liqueur, coffee, 63 proof
+- Alcoholic beverage, malt beer, hard lemonade
+- Alcoholic beverage, pina
