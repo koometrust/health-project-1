@@ -45,3 +45,9 @@ form {
   justify-content: center;
   align-items: center;
 }
+#bmi-result {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #008000; /* green color */
+}
